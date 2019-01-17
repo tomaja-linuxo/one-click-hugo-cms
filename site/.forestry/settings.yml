@@ -37,7 +37,11 @@ file_template: ":filename:"
 build:
   preview_command: hugo -D
   publish_command: hugo
+  preview_env:
+  - HUGO_ENV=staging
+  - HUGO_VERSION=0.53
   publish_env:
   - hugo_version=0.46
+  preview_output_directory: public
   output_directory: site/public
 version: '0.53'
